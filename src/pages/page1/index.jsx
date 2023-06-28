@@ -1,5 +1,10 @@
-import { Location } from "..";
+// El siguiente componente esta solo a modo de prueba
+// --------------------------------------------------
+const Location = () => <></>
+// --------------------------------------------------
 
+
+// Acá comienza el código que necesita mejoras.
 const locations = {
   argentina: [
     { name: "location1", address: "Calle 123, 1234 Ciudad - Provincia" },
@@ -15,7 +20,7 @@ const locations = {
   ],
 };
 
-const Page1 = () => {
+const Locations = () => {
   const getUsersFromArgentina = () => {
     return locations.argentina.map((user) => (
       <Location name={user.name} email={user.email} />
@@ -42,4 +47,4 @@ const Page1 = () => {
   );
 };
 
-export { Page1 };
+export { Locations };
